@@ -24,7 +24,8 @@
     list-style: none;
 }
 :root{
-    --primary: radial-gradient(circle at 12% 55%,rgba(33,150,243,.15),hsla(0,0%,100%,0) 25%),radial-gradient(circle at 85% 33%,rgba(108,99,255,.175),hsla(0,0%,100%,0) 25%);
+    --primary: radial-gradient(circle at 12% 55%,rgba(62, 49, 115, 0.333),rgba(212, 212, 212, 0.695) 25%),radial-gradient(circle at 85% 33%,rgba(125, 119, 186, 0.355),rgba(44, 43, 43, 0.337) 25%);
+    --textcolor: linear-gradient(270deg, #2357f3e1 2%, #0853f4 98%);
     --secondary: linear-gradient(270deg, #4b77fce1 2%, #0853f4 98%);
     --ternary: linear-gradient(270deg, #a1b7fd4e 2%, #e7efff5a 98%);
     --outline : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -53,7 +54,7 @@
     margin-top: 10rem;
 }
 body{
-    background: var(--primary);
+    background: #fff;
     background-size: cover;
     width: 100vw;
     max-width: 100vw;
@@ -84,7 +85,7 @@ body{
     background-color: rgb(70, 69, 69);
     border-radius: 10px;
 }
-@media (max-width: 660px){
+@media (max-width: 900px){
     #preloader{
         background-size: 60%;
     }
@@ -96,7 +97,8 @@ body{
     }
     .toggle-btn{
         display: flex;
-        margin-top: 1.3rem;
+        margin-top: 1rem;
+        height: 18px;
     }
     .nav-links{
         display: none;
@@ -120,30 +122,46 @@ body{
         display: flex;
     }
     .logo{
-        margin-left: 1.7rem;
-    }
-    .content{
+        margin-left: 1.2rem;
         font-size: 1.7rem;
     }
     .content{
-       font-size: 1px;
+        justify-content: space-between;
+        margin-left: -1.6rem;
+    }
+    
+    .comment, .next-item{
+        font-size: 1.7rem;
     }
     .text-me{
         font-size: 1rem;
     }
+
     .btn{
+        display: flex;
         position: relative;
-        top: 2rem;
-        margin-left: -3%;
+        top: 3rem;
+        margin-left: -1.6rem;
+        width: 100%;
+        justify-content: center;
     }
     .text-me{
         margin: 0 auto;
         font-size: 0.5rem;
     }
+    .content{
+        grid-template-columns: 1fr 1fr;
+    }
+    #description-1, #description-2{
+        font-size: 10rem;
+    }
 }
 
 #next{
-    color: rgb(37, 101, 227);
+    background: var(--textcolor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3070fc;
 }
 .nav-bar{
     display: flex;
@@ -182,7 +200,7 @@ img{
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-family: 'Inter', sans-serif;
-    font-size: 3rem;
+    font-size: 2.8rem;
     justify-content: space-around;
 }
 .illustration{
@@ -200,6 +218,9 @@ img{
     margin-top: 4rem;
 }
 #second, #third{
+    background: var(--textcolor);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     color: #3070fc;
 }
 .next-item{
@@ -220,14 +241,14 @@ img{
     font-weight: 300;
 }
 .btn{
+    display: flex;
     border: none;
     position: relative;
     background-image: var(--secondary);
     color: rgb(255, 255, 255);
     border-radius: 30px;
-    padding: 0.45em 0.9em;
-    padding-bottom: 0.49em;
-    font-size: 1.4rem;
+    padding: 0.55em 0.50em;
+    font-size: 1.3rem;
     cursor: pointer;
     overflow: hidden;
 }
