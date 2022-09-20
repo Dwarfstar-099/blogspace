@@ -86,7 +86,10 @@ body{
 }
 @media (max-width: 660px){
     #preloader{
-        background-size: 80%;
+        background-size: 60%;
+    }
+    #upper{
+        font-size: 1.6rem;
     }
     body{
         background-position: center center;
@@ -237,7 +240,7 @@ img{
     top: 69%;
     left: 5%;
     background: var(--ternary);
-    transition: all 5s ease-out;
+    transition: all 1s ease-out;
     display: block;
 }
 .btn:hover::before{

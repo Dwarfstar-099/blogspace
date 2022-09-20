@@ -4,6 +4,7 @@ const loader = document.getElementById('preloader');
 
 toggleButton.addEventListener('click', ()=> {
     navbarLinks.style.display = "flex";
+    
 })
 
 window.addEventListener('load', function(){
