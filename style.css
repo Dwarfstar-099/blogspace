@@ -87,7 +87,7 @@ body{
 }
 @media (max-width: 2800px){
     .btn{
-        top: 60rem;
+        top: 65rem;
     }
 }
 @media (max-width: 900px){
@@ -133,13 +133,14 @@ body{
     .content{
         justify-content: space-between;
         margin-left: -1.6rem;
+        flex-direction: column;
     }
     
     .comment, .next-item{
         font-size: 1.7rem;
     }
     .text-me{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .btn{
@@ -208,7 +209,7 @@ img{
     justify-content: space-between;
 }
 .illustration{
-    width: 35%;
+    width: 45%;
     margin-top: 6rem;
     padding-right: 5rem;
 }
