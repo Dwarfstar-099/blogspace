@@ -135,12 +135,14 @@ body{
         margin-left: -1.6rem;
         flex-direction: column;
     }
-    
+    .illustration{
+        margin-left: 5rem;
+    }
     .comment, .next-item{
         font-size: 1.7rem;
     }
     .text-me{
-        font-size: 0.8rem;
+        font-size: 8rem;
     }
 
     .btn{
@@ -209,7 +211,7 @@ img{
     justify-content: space-between;
 }
 .illustration{
-    width: 45%;
+    width: 44%;
     margin-top: 6rem;
     padding-right: 5rem;
 }
