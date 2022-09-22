@@ -85,6 +85,11 @@ body{
     background-color: rgb(70, 69, 69);
     border-radius: 10px;
 }
+@media (max-width: 2800px){
+    .btn{
+        top: 60rem;
+    }
+}
 @media (max-width: 900px){
     #preloader{
         background-size: 60%;
@@ -140,7 +145,6 @@ body{
     .btn{
         display: flex;
         position: relative;
-        top: 0.5rem;
         margin-left: -1.6rem;
         width: 100%;
         justify-content: center;
@@ -198,16 +202,15 @@ img{
     width: 100%;
 }
 .content{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    display: flex;
     font-family: 'Inter', sans-serif;
     font-size: 2.8rem;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .illustration{
-    width: 100%;
-    margin-top: 9rem;
-    padding-right: 3rem;
+    width: 35%;
+    margin-top: 6rem;
+    padding-right: 5rem;
 }
 .text{
     display: flex;
@@ -254,7 +257,7 @@ img{
     font-size: 1.3rem;
     cursor: pointer;
     overflow: hidden;
-    margin-top: 1.2rem;
+    top: -0.1rem;
 }
 .btn::before{
     content: "";
